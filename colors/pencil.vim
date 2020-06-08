@@ -392,9 +392,10 @@ endif
     let g:terminal_ansi_colors = [
           \ s:black.gui, s:red.gui, s:green.gui, s:yellow.gui,
           \ s:blue.gui, s:purple.gui, s:cyan.gui, s:white.gui,
-          \ s:black.gui, s:red.gui, s:green.gui, s:yellow.gui,
+          \ s:light_black.gui, s:red.gui, s:green.gui, s:yellow.gui,
           \ s:blue.gui, s:purple.gui, s:cyan.gui, s:white.gui
           \]
     let g:terminal_color_background = s:bg.gui
+    let g:terminal_color_foreground = s:red.gui
   endif
 " }
