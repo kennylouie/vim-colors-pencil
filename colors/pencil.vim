@@ -386,3 +386,15 @@ else
   hi link GitGutterChange             LineNr
   hi link GitGutterChangeDelete       LineNr
 endif
+
+" Fix colors in terminal buffers {
+  if has('terminal')
+    let g:terminal_ansi_colors = [
+          \ s:black.gui, s:red.gui, s:green.gui, s:yellow.gui,
+          \ s:blue.gui, s:purple.gui, s:cyan.gui, s:white.gui,
+          \ s:black.gui, s:red.gui, s:green.gui, s:yellow.gui,
+          \ s:blue.gui, s:purple.gui, s:cyan.gui, s:white.gui
+          \]
+    let g:terminal_color_background = s:bg.gui
+  endif
+" }
